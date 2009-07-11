@@ -3,10 +3,11 @@
 (require 'jde)
 (require 'anything)
 
-(add-hook 'jde-mode-hook
-          '(lambda ()
-             (define-key jde-mode-map (kbd "C-M-i") 'anything-jde-complete)
-             ))
+;;; Configuration sample
+;; (add-hook 'jde-mode-hook
+;;           '(lambda ()
+;;              (define-key jde-mode-map (kbd "C-M-i") 'anything-jde-complete)
+;;              ))
 
 (defvar anything-source-jde-complete
   `((name . "jde completions")
